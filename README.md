@@ -114,10 +114,11 @@ findCommonCause(graph, 'OrderService', 'PaymentService');
 
 ## Documentation
 
-- **[Specification (English)](./docs/specification-en.md)** - Core concepts, node/edge types, usage guide
-- **[规范文档 (中文)](./docs/specification-zh.md)** - 核心概念、节点/边类型、使用指南
+- **[Specification (English)](./specification-en.md)** - Core concepts, node/edge types, usage guide
+- **[规范文档 (中文)](./specification-zh.md)** - 核心概念、节点/边类型、使用指南
+- **[AI Graph Building Guide](./ai-graph-building-guide.md)** - Guide for AI assistants to help build GID graphs
 
-*For complete implementation details, schemas, and code examples, see GID Pro.*
+*For complete implementation details, see [GID Pro](https://github.com/tonioyeme/graph-indexed-development-pro).*
 
 ---
 
@@ -128,15 +129,15 @@ findCommonCause(graph, 'OrderService', 'PaymentService');
 Command-line tool for working with GID graphs:
 
 ```bash
-npm install -g graph-indexed-development-cli
+npm install -g github:tonioyeme/graph-indexed-development-cli
 ```
 
 **Features:**
 - `gid extract` - Extract dependency graph from code
 - `gid check` - Validate graph integrity
 - `gid query` - Impact analysis, dependency lookup
-- `gid serve` - Web visualization
 - `gid design` - AI-assisted graph design
+- `gid visual` - Web visualization ([Pro](https://github.com/tonioyeme/graph-indexed-development-pro))
 
 👉 **[github.com/tonioyeme/graph-indexed-development-cli](https://github.com/tonioyeme/graph-indexed-development-cli)**
 

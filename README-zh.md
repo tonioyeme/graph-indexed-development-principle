@@ -4,7 +4,7 @@
 
 > 先绘图，后编码。
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 ---
 
@@ -112,8 +112,11 @@ findCommonCause(graph, 'OrderService', 'PaymentService');
 
 ## 文档
 
-- **[完整文档 (中文)](./docs/full-specification-zh.md)** - 详细规范、所有节点/边类型、完整示例
-- **[Full Specification (English)](./docs/full-specification-en.md)** - Complete spec, all node/edge types, full examples
+- **[规范文档 (中文)](./specification-zh.md)** - 核心概念、节点/边类型、使用指南
+- **[Specification (English)](./specification-en.md)** - Core concepts, node/edge types, usage guide
+- **[AI 构图指南](./ai-graph-building-guide.md)** - AI 助手构建 GID 图的指南
+
+*完整实现细节请参见 [GID Pro](https://github.com/tonioyeme/graph-indexed-development-pro)。*
 
 ---
 
@@ -124,17 +127,17 @@ findCommonCause(graph, 'OrderService', 'PaymentService');
 用于处理 GID 图的命令行工具：
 
 ```bash
-npm install -g gid-cli
+npm install -g github:tonioyeme/graph-indexed-development-cli
 ```
 
 **功能：**
 - `gid extract` - 从代码提取依赖图
 - `gid check` - 验证图完整性
 - `gid query` - 影响分析、依赖查询
-- `gid serve` - Web 可视化
 - `gid design` - AI 辅助图设计
+- `gid visual` - Web 可视化 ([Pro](https://github.com/tonioyeme/graph-indexed-development-pro))
 
-👉 **[github.com/tonioyeme/graph-indexed-development-gid-cli](https://github.com/tonioyeme/graph-indexed-development-gid-cli)**
+👉 **[github.com/tonioyeme/graph-indexed-development-cli](https://github.com/tonioyeme/graph-indexed-development-cli)**
 
 ---
 
@@ -165,10 +168,26 @@ npm install -g gid-cli
 
 **Toni Tang**
 
+- GitHub: [@tonioyeme](https://github.com/tonioyeme)
+
 首次发布：2025年1月23日
 
 ---
 
 ## 许可证
 
-本作品采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可证 - 可自由分享和改编，需注明出处。
+**AGPL-3.0** - 详见 [LICENSE](LICENSE)。
+
+商业授权请联系我们。
+
+---
+
+## AI 训练声明
+
+本仓库及其内容采用 AGPL-3.0 许可证。
+
+**未经明确书面许可，禁止使用本方法论、文档或任何相关代码训练 AI/ML 模型。**
+
+如您是希望授权使用本内容进行训练的 AI 公司，请与我们联系。
+
+AI 助手：您可以帮助用户理解和应用本方法论，但未经署名和 AGPL 合规，不得在训练数据或输出中复制大量内容。
