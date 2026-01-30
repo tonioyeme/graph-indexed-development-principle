@@ -102,13 +102,13 @@ findCommonCause(graph, 'OrderService', 'PaymentService');
 
 ### 3. Progressive Adoption
 
-| Level | What to Do | Time |
-|-------|-----------|------|
-| L0 | Understand concepts, model in your mind | 1h |
-| L1 | Create graph.yml, maintain manually | 2-4h |
-| L2 | Write query functions, do impact analysis | Half day |
-| L3 | Use tools for auto dependency extraction | 1-2 days |
-| L4 | AI-assisted component responsibility inference | As needed |
+| Level | What to Do |
+|-------|-----------|
+| L0 | Understand concepts, model in your mind |
+| L1 | Create graph.yml, maintain manually |
+| L2 | Write query functions, do impact analysis |
+| L3 | Use tools for auto dependency extraction |
+| L4 | AI-assisted component responsibility inference |
 
 ---
 
@@ -118,28 +118,35 @@ findCommonCause(graph, 'OrderService', 'PaymentService');
 - **[规范文档 (中文)](./specification-zh.md)** - 核心概念、节点/边类型、使用指南
 - **[AI Graph Building Guide](./ai-graph-building-guide.md)** - Guide for AI assistants to help build GID graphs
 
-*For complete implementation details, see [GID Pro](https://github.com/tonioyeme/graph-indexed-development-pro).*
+*For the formal methodology paper, see [GID Paper (Zenodo)](https://zenodo.org/records/18425984).*
 
 ---
 
 ## Tools
 
-### GID CLI (Open Source)
+### GID CLI
 
 Command-line tool for working with GID graphs:
 
 ```bash
-npm install -g github:tonioyeme/graph-indexed-development-cli
+npm install -g graph-indexed-development-cli
 ```
 
-**Features:**
-- `gid extract` - Extract dependency graph from code
-- `gid check` - Validate graph integrity
-- `gid query` - Impact analysis, dependency lookup
-- `gid design` - AI-assisted graph design
-- `gid visual` - Web visualization ([Pro](https://github.com/tonioyeme/graph-indexed-development-pro))
+**Commands:** `init`, `extract`, `advise`, `query`, `design`, `analyze`, `refactor`, `semantify`, `visual`, `history`
 
 👉 **[github.com/tonioyeme/graph-indexed-development-cli](https://github.com/tonioyeme/graph-indexed-development-cli)**
+
+### GID MCP Server
+
+Use GID through AI assistants (Claude, Cursor, VS Code):
+
+```bash
+npx graph-indexed-development-mcp
+```
+
+18 tools for graph querying, management, analysis, and visualization — all accessible through natural language.
+
+👉 **[github.com/tonioyeme/graph-indexed-development-mcp](https://github.com/tonioyeme/graph-indexed-development-mcp)**
 
 ---
 
